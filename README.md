@@ -12,3 +12,6 @@ rush build
 
 ## rush deploy
 rush init-deploy -p PROJECT_NAME  
+
+## netlify command
+npm i -g @microsoft/rush && rush install && rush build && rush deploy --overwrite -p landing && cd common/deploy/apps/landing && rushx build
